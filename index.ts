@@ -6,8 +6,9 @@ import db from './models';
 import router from './routes'
 const cors = require('cors')
 import path from "path";
+const bodyParser = require('body-parser');
 
-import bodyParser from 'body-parser';
+// import bodyParser from 'body-parser';
 import * as dotenv from 'dotenv'
 var socket = require('./socket.service')
 

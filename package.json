@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This is a boilerplate for the node backend",
   "main": "index.ts",
+  "typings":"index.ts",
   "scripts": {
     "start": "nodemon index.ts",
     "dev": "nodemon index.ts",
