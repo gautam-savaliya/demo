@@ -20,7 +20,7 @@ app.use(express.json())
 app.use(express.static(path.join(__dirname, "public")));
 app.use(cors())
 
-app.use(function (req:any, res:any, next) {
+app.use(function (req:any, res:any, next:any) {
 
     // Website you wish to allow to connect
     res.setHeader('Access-Control-Allow-Origin', '*');
