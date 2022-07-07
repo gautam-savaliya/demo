@@ -2,7 +2,7 @@
   "name": "backend-boilerplate",
   "version": "1.0.0",
   "description": "This is a boilerplate for the node backend",
-  "main": "server.js",
+  "main": "index.ts",
   "scripts": {
     "start": "nodemon index.ts",
     "dev": "nodemon index.ts",
