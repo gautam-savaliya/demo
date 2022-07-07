@@ -1,5 +1,5 @@
 import express from 'express';
-const app = express();
+const app:any = express();
 const port = process.env.PORT || 4000;
 import db from './models';
 import router from './routes'
