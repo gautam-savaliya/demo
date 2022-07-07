@@ -1,5 +1,5 @@
-import express from 'express';
-const app:any = express();
+import express, { Request, Response } from 'express';
+const app = express();
 const port = process.env.PORT || 4000;
 import db from './models';
 import router from './routes'
@@ -20,7 +20,7 @@ app.use(express.json())
 app.use(express.static(path.join(__dirname, "public")));
 app.use(cors())
 
-app.use(function (req:any, res:any, next:any) {
+app.use(function (req:Request, res:Response, next) {
 
     // Website you wish to allow to connect
     res.setHeader('Access-Control-Allow-Origin', '*');
